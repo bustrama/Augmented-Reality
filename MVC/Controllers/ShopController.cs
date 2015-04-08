@@ -4,13 +4,13 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AR.Controllers
+namespace Site.Controllers
 {
-    public class DeveloperController : Controller
+    public class ShopController : Controller
     {
-        [Route("metaio")]
+        [Route("Shop")]
         [AllowAnonymous]
-        public ActionResult Metaio()
+        public ActionResult Index()
         {
             return View();
         }

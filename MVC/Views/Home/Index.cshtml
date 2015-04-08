@@ -29,12 +29,12 @@
             <p>
                 Register Now and you will have access to all of our content!
             </p>
-            <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default" })</p>
+            <p>@Html.ActionLink("Register", "Register", "Account", null, new { @class = "btn btn-default", @disabled = "disabled" })</p>
         </div>
         <div class="col-md-6">
             <h2>Shop Now!</h2>
             <p>Enter our shop to watch all the awesome products.</p>
-            <p>@Html.ActionLink("Shop Now!", "Shop", "Glasses", null, new { @class = "btn btn-default" })</p>
+            <p>@Html.ActionLink("Shop Now!", "Index", "Shop", null, new { @class = "btn btn-default"})</p>
         </div>
     </div>
 </div>

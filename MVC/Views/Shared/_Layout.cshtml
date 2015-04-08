@@ -1,4 +1,6 @@
-﻿<head>
+﻿@using System.Web.Optimization;
+
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AR :: @ViewBag.Title</title>
@@ -23,8 +25,8 @@
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-sunglasses"></span> Glasses <span class="caret"></span></a>
                         <ul class="dropdown-menu" role="menu">
-                            <li>@Html.ActionLink("InfinityAR", "InfinityAR", "Glass")</li>
-                            <li>@Html.ActionLink("Google Glass", "GoogleGlass", "Glass")</li>
+                            <li>@Html.ActionLink("InfinityAR", "InfinityAR", "Info")</li>
+                            <li>@Html.ActionLink("Google Glass", "GoogleGlass", "Info")</li>
                             @*<li class="divider"></li>             //TODO: Enter here something
                                 <li><a href="#">Separated link</a></li>*@
                         </ul>
@@ -36,12 +38,12 @@
                         <ul class="dropdown-menu" role="menu">
                             <li style="margin-left:10px">SDK</li>
                             <li class="divider"></li>
-                            <li>@Html.ActionLink("METAIO", "Metaio", "Developer")</li>
+                            <li>@Html.ActionLink("METAIO", "Metaio", "Info")</li>
                         </ul>
                     </li>
 
                     <li>
-                        <a href="@Url.Action("Shop", "Glass")"><span class="glyphicon glyphicon-shopping-cart glyphicon-adjust"></span> Shop</a>
+                        <a href="@Url.Action("Index", "Shop")"><span class="glyphicon glyphicon-shopping-cart glyphicon-adjust"></span> Shop</a>
                     </li>
                     <li> <a href="@Url.Action("About", "Home")"> <span class="glyphicon glyphicon-info-sign"></span> About </a></li>
                     <li> <a href="@Url.Action("Contact", "Home")"> <span class="glyphicon glyphicon-comment"></span> Contact </a></li>
@@ -62,4 +64,3 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
-</html>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AR.Controllers
+namespace Site.Controllers
 {
-    public class GlassController : Controller
+    public class InfoController : Controller
     {
         [Route("InfinityAR")]
         [AllowAnonymous]
@@ -22,9 +22,9 @@ namespace AR.Controllers
             return View();
         }
 
-        [Route("Shop")]
+        [Route("metaio")]
         [AllowAnonymous]
-        public ActionResult Shop()
+        public ActionResult Metaio()
         {
             return View();
         }

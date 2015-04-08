@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace AR
+namespace Site
 {
     public class BundleConfig
     {

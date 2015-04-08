@@ -4,12 +4,12 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AR.Controllers
+namespace Site.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         [AllowAnonymous]
+        [Route("")]
         public ActionResult Index()
         {
             return View();
