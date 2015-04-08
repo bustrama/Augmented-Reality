@@ -1,0 +1,23 @@
+﻿.DropDown{
+    border-radius:4px;
+    padding:3px;
+    background: #DFE9EC;
+    -webkit-appearance: none; 
+    width: 50px;
+    height: 30px;
+}
+
+.DropDown:hover{
+    background: #DFE9EC;
+    color: #414848;
+}
+
+.DropDownItem{
+    background: #DFE9EC;
+    color: #414848;
+}
+
+.DropDownItem:hover{
+    background: #414848;
+    color: #DFE9EC;
+}
